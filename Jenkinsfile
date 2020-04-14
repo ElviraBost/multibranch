@@ -29,7 +29,7 @@ import java.util.stream.Collectors
   }
  }
 
-  node ("jenkins_swarm_slave") {
+  node ("master) {
 
     try {
       stage ('CHECKOUT') {
