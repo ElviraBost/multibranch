@@ -29,7 +29,7 @@ import java.util.stream.Collectors
   }
  }
 
-  node ("master) {
+  node ("master") {
 
     try {
       stage ('CHECKOUT') {
