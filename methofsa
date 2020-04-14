@@ -1,0 +1,6 @@
+curl -X POST -k -H 'Content-Type: application/json' Authorization: Basic <<Authentication String>>' -i 'https://api.bitbucket.org/2.0/repositories/username/r1/refs/tags' --data '{
+       "name": "my-new-tag",
+       "target":{
+           "hash": "0d2019c8e18f8c961cdb67cb27afb69b04f3a10b"
+       }
+    }
