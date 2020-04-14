@@ -1,4 +1,3 @@
-import  com.mckesson.ProjectVars 
 import jenkins.model.*
 import hudson.model.*
 import groovy.json.JsonSlurper
