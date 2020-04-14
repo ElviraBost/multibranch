@@ -1,0 +1,8 @@
+curl https://api.bitbucket.org/2.0/repositories/jdoe/myrepo/refs/tags \           
+-s -u jdoe -X POST -H "Content-Type: application/json" \
+-d '{
+    "name" : "new-tag-name",
+    "target" : {
+        "hash" : "a1b2c3d4e5f6",
+    }
+}'
