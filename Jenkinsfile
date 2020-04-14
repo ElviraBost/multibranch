@@ -29,7 +29,7 @@ import java.util.stream.Collectors
     throw err
   }
  }
-}
+
   node ("jenkins_swarm_slave") {
 
     try {
