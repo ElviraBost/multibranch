@@ -22,7 +22,7 @@ import java.util.stream.Collectors
 
  def cMergePullRequest1 (gitURL, gitRepository ) {
   try {
-    sh "git fetch --no-tags --progress ${gitURL} +refs/pull-requests/${env.CHANGE_ID}/from:refs/remotes/origin/${env.BRANCH_NAME}"
+    sh "git fetch --no-tags --progress ${gitURL} +refs/pull/${env.CHANGE_ID}/from:refs/remotes/origin/${env.BRANCH_NAME}"
     sh "git merge remotes/origin/${env.BRANCH_NAME}"
   } catch(err) {
     throw err
